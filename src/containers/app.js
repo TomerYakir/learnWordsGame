@@ -12,7 +12,8 @@ class App extends Component {
     if (key == selectedOptionKey) {
         this.props.setScore('INCREASE_SCORE');
     } else {
-        this.props.setScore('DECREASE_SCORE');
+        // TODO - move this to component state, then update score after the correct answer is picked
+        // this.props.setScore('DECREASE_SCORE'); -- 
         $('.' + key).fadeOut(); 
     }
   }
